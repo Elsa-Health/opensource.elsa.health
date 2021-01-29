@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "avenir";
+	src: url("/fonts/Avenir/AvenirLTStd-Book.otf");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "avenir";
+	src: url("/fonts/Avenir/AvenirLTStd-Medium.otf");
+	font-style: medium;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "avenir";
+	src: url("/fonts/Avenir/AvenirLTStd-Heavy.otf");
+	font-style: medium;
+	font-weight: 800;
+	font-display: swap;
+}
+
+.container {
+	padding: inherit 1em;
+}
+
+code {
+	background-color: #eee;
+	border-radius: 3px;
+	font-family: courier, monospace;
+	padding: 0 3px;
+}
