@@ -9,7 +9,7 @@ interface SidebarContentProps {
 const SidebarContent: React.FC<SidebarContentProps> = ({
 	baseRoute = "symptom-assessment",
 }) => {
-	const { basePath, pathname, route } = useRouter();
+	const { route } = useRouter();
 
 	const isActivePath = (routeName: string) =>
 		routeName === "/"

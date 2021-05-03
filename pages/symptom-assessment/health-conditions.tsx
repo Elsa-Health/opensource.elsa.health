@@ -1,7 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {
-	MailIcon,
-	PhoneIcon,
 	ShareIcon,
 	BeakerIcon,
 } from "@heroicons/react/solid";

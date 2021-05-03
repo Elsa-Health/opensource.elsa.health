@@ -1,10 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import {
-	MailIcon,
-	PhoneIcon,
-	ShareIcon,
-	BeakerIcon,
-} from "@heroicons/react/solid";
+import { ShareIcon, BeakerIcon } from "@heroicons/react/solid";
 import React from "react";
 import { v1 as uuidV1 } from "uuid";
 import _ from "lodash";
@@ -113,7 +108,11 @@ const HealthConditions = () => {
 													<div className="w-0 flex-1 flex">
 														<a
 															// href={`${condition.modelId}`}
-															onClick={() => alert("Model explorer is coming soon")}
+															onClick={() =>
+																alert(
+																	"Model explorer is coming soon"
+																)
+															}
 															className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
 														>
 															<ShareIcon
@@ -128,7 +127,11 @@ const HealthConditions = () => {
 													<div className="-ml-px w-0 flex-1 flex">
 														<a
 															// href={`${condition.modelId}`}
-															onClick={() => alert("Model explorer is coming soon")}
+															onClick={() =>
+																alert(
+																	"Model explorer is coming soon"
+																)
+															}
 															className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
 														>
 															<BeakerIcon

@@ -115,6 +115,9 @@ const Terminology = () => {
 								</dl>
 							</div>
 						</div>
+						<div className="mt-10">
+							<Footer />
+						</div>
 					</div>
 				</main>
 			</DocsLayout>
