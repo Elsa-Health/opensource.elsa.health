@@ -6,8 +6,8 @@ const SymptomAssessmentIndex = () => (
 	<div>
 		<DocsLayout
 			sidebar={<SidebarContent />}
-			sidebarTitle="Symptom Assessment"
-			title="Elsa Health | Symptom Assessment"
+			sidebarTitle="Mobile Health Assistant"
+			title="Elsa Health | Health Assistant"
 		>
 			<main className="flex-1 relative pb-8 z-0 overflow-y-auto mx-auto container px-14 py-6 text-gray-800">
 				{/* <h1 className="text-3xl">Concepts & Terms</h1> */}
@@ -68,9 +68,9 @@ const SymptomAssessmentIndex = () => (
 									<ul className="list-disc list-inside pl-6 mt-2">
 										<li>
 											Support developers of health
-											technologies to quickly add symptom
-											assessment capabilities to their
-											technolgies
+											technologies to quickly adopt our
+											technology for their own deployment
+											needs
 										</li>
 										<li>
 											Ensure Africa and her specific
@@ -95,29 +95,38 @@ const SymptomAssessmentIndex = () => (
 								<h1 className="text-xl font-medium">
 									Quick Start
 								</h1>
-								{/* TODO: add links to the correct pages */}
+								<p>
+									This project is Android only, and support
+									for ios application is not prioritized at
+									all. If you are interested in supporting
+									iOS, please submit a pull request and we
+									would be happy to merge it!
+								</p>
 								Install the requirements
 								<ul className="list-disc list-inside pl-6 mt-2">
-									<li>Julia v. 1.6</li>
-									<li>Distributions.jl</li>
 									<li>
-										Omega.jl - Causal & Counterfactual
-										inference
+										Install React Native on your local
+										machine:{" "}
+										<a
+											href="https://reactnative.dev/docs/getting-started"
+											target="_blank"
+											className="text-primary"
+										>
+											Instructions here
+										</a>
 									</li>
-									<li>To run the server HTTP.jl</li>
 									<li>
-										To visualise results & distributions
-										UnicodePlots.jl
+										Install Typescript on your machine:{" "}
+										<a
+											href="https://www.typescriptlang.org/download"
+											target="_blank"
+											className="text-primary"
+										>
+											Instructions here
+										</a>
 									</li>
 									<li>
-										To send back results from the server
-										JSON2.jl
-									</li>
-								</ul>
-								Quickly launch the server
-								<ul className="list-disc list-inside pl-6 mt-2">
-									<li>
-										Clone the repository:{" "}
+										Clone the repo:{" "}
 										<code>
 											git clone
 											git@github.com:Elsa-Health/elsa-models.git
@@ -128,14 +137,14 @@ const SymptomAssessmentIndex = () => (
 										path/to/folder
 									</li>
 									<li>
-										<code>
-											julia --project=@. ./src/server.jl
-										</code>{" "}
-										to activate the current project and
-										start the server
+										<code>yarn</code> to install the project
+										dependencies, this could take a few
+										minutes
 									</li>
 									<li>
-										To stop the server simply press Ctrl+C
+										<code>yarn android && yarn start</code>{" "}
+										to start the app on your connected
+										(android only) device or emulator
 									</li>
 								</ul>
 								<h1 className="text-xl font-medium">

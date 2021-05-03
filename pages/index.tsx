@@ -4,7 +4,7 @@ import Layout from "../components/MainLayout";
 const IndexPage = () => (
 	<Layout title="Elsa Health Open Source | Healthcare for all">
 		<div className="container mx-auto py-16 pb-24">
-			<h1 className="text-lg text-center md:text-left md:text-xl text-gray-700">
+			<h1 className="text-lg text-center md:text-left md:text-3xl text-gray-800">
 				Featured Projects
 			</h1>
 
@@ -14,8 +14,8 @@ const IndexPage = () => (
 					className="w-8/12 px-10 md:w-4/12 lg:w-2/12"
 				/>
 				<div className="w-8/12">
-					<h1 className="text-xl pb-3 font-semibold md:text-3xl text-gray-800  text-center md:text-left">
-						Elsa Health Symptom Assessment
+					<h1 className="text-xl pb-3 md:text-2xl text-gray-800  text-center md:text-left">
+						Disease Identification Models
 					</h1>
 					<p className="pb-3 text-justify md:text-left">
 						Elsa Health Symptom Assessment algorithms are a
@@ -38,11 +38,13 @@ const IndexPage = () => (
 							</a>
 						</Link>
 
-						<Link href="/symptom-assessment">
-							<a className="font-medium text-primary hover:text-indigo-500">
-								Github
-							</a>
-						</Link>
+						<a
+							href="https://github.com/Elsa-Health/elsa-models"
+							target="_blank"
+							className="font-medium text-primary hover:text-indigo-500"
+						>
+							Github
+						</a>
 					</div>
 				</div>
 			</div>
@@ -56,8 +58,8 @@ const IndexPage = () => (
 					className="w-8/12 px-10 md:w-4/12 lg:w-2/12"
 				/>
 				<div className="w-8/12">
-					<h1 className="text-xl pb-3 font-semibold md:text-3xl text-gray-800  text-center md:text-left">
-						Elsa Health Assistant
+					<h1 className="text-xl pb-3 md:text-2xl text-gray-800  text-center md:text-left">
+						Mobile Health Assistant
 					</h1>
 					<p className="pb-3 text-justify md:text-left">
 						The Elsa Health Assistant is an android application that
@@ -76,17 +78,19 @@ const IndexPage = () => (
 					</p>
 
 					<div className="mt-3 flex flex-row gap-5">
-						<Link href="/symptom-assessment">
+						<Link href="/health-assistant">
 							<a className="font-medium text-primary hover:text-indigo-500">
 								Documentation
 							</a>
 						</Link>
 
-						<Link href="/symptom-assessment">
-							<a className="font-medium text-primary hover:text-indigo-500">
-								Github
-							</a>
-						</Link>
+						<a
+							href="https://github.com/Elsa-Health/elsa-providers"
+							target="_blank"
+							className="font-medium text-primary hover:text-indigo-500"
+						>
+							Github
+						</a>
 					</div>
 				</div>
 			</div>
@@ -119,13 +123,13 @@ const IndexPage = () => (
 									Open Website{" "}
 								</a>
 
-								<a
+								{/* <a
 									href="https://github.com/Elsa-Health/milestone-tracker-site"
 									target="_blank"
 									className="font-medium text-primary hover:text-indigo-500"
 								>
 									Docs
-								</a>
+								</a> */}
 
 								<a
 									href="https://github.com/Elsa-Health/milestone-tracker-site"
@@ -152,13 +156,13 @@ const IndexPage = () => (
 								</p>
 							</div>
 							<div className="mt-3 text-sm flex gap-5">
-								<a
+								{/* <a
 									href="https://github.com/Elsa-Health/pediatric-assessment-intake-form"
 									target="_blank"
 									className="font-medium text-primary hover:text-indigo-500"
 								>
 									Docs
-								</a>
+								</a> */}
 
 								<a
 									href="https://github.com/Elsa-Health/pediatric-assessment-intake-form"
@@ -185,13 +189,13 @@ const IndexPage = () => (
 								</p>
 							</div>
 							<div className="mt-3 text-sm flex gap-5">
-								<a
+								{/* <a
 									href="https://github.com/Elsa-Health/bayesian-logistic-regressor"
 									target="_blank"
 									className="font-medium text-primary hover:text-indigo-500"
 								>
 									Docs
-								</a>
+								</a> */}
 
 								<a
 									href="https://github.com/Elsa-Health/bayesian-logistic-regressor"

@@ -6,16 +6,19 @@ import Footer from "./Footer";
 type Props = {
 	children?: ReactNode;
 	title?: string;
+	description?: string;
 };
 
 const MainLayout = ({
 	children,
 	title = "Elsa Health | Healthcare for all",
+	description = "Elsa Health as an organization is commited to equal access to healthcare for all. We do this the best way we know how, by building technologies to augment the capacity and skills of decision makers (healthcare workers, governments, researchrs, parents, guardians, and individuals) to support optimal decision making. Disease should be a thing of the past",
 }: Props) => (
 	<div>
 		<Head>
 			<title>{title}</title>
 			<meta charSet="utf-8" />
+			<meta name="description" content={description}></meta>
 			<meta
 				name="viewport"
 				content="initial-scale=1.0, width=device-width"
@@ -93,9 +96,10 @@ const MainLayout = ({
 						Github
 					</button> */}
 					<button
-                        type="button"
-                        onClick={() =>
-							(window.location.href = "https://github.com/Elsa-Health/")
+						type="button"
+						onClick={() =>
+							(window.location.href =
+								"https://github.com/Elsa-Health/")
 						}
 						className="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 					>

@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
+import Image from 'next/image'
 import { Transition } from "@headlessui/react";
 
 type Props = {
@@ -98,8 +99,9 @@ const DocsLayout = ({
 												</div>
 												<div className="flex-shrink-0 flex items-center px-4">
 													<img
-														src="./elsa-icon.svg"
+														src="elsa-icon.svg"
 														width="90"
+														height="auto"
 													/>
 													<h1 className="text-xl">
 														{sidebarTitle}
@@ -132,7 +134,7 @@ const DocsLayout = ({
 						{/* <!-- Sidebar component, swap this element with another sidebar if you like --> */}
 						<div className="flex flex-col flex-grow bg-gray-200 pt-5 pb-4 overflow-y-auto">
 							<div className="flex items-center flex-shrink-0 px-4">
-								<img src="./elsa-icon.svg" width="90" />
+								<img height="auto" src={"/elsa-icon.svg"} width="90" />
 								<h1 className="text-xl text-primary">{sidebarTitle}</h1>
 							</div>
 							<nav

@@ -7,7 +7,7 @@ interface SidebarContentProps {
 }
 
 const SidebarContent: React.FC<SidebarContentProps> = ({
-	baseRoute = "symptom-assessment",
+	baseRoute = "health-assistant",
 }) => {
 	const { basePath, pathname, route } = useRouter();
 
@@ -67,8 +67,7 @@ const SidebarContent: React.FC<SidebarContentProps> = ({
 				</Link>
 			</div>
 
-			<a
-				// href="#"
+			{/* <a
 				className="group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md text-gray-700 hover:text-primary"
 			>
 				<svg
@@ -97,14 +96,7 @@ const SidebarContent: React.FC<SidebarContentProps> = ({
 						Conditions Overview
 					</a>
 				</Link>
-				{/* <a
-					href="#"
-					className="flex px-2 py-2 text-sm leading-6 rounded-md text-gray-700 hover:text-primary"
-					aria-current="page"
-				>
-					Symptom Matrices
-				</a> */}
-			</div>
+			</div> */}
 
 			<a
 				href="#"
@@ -134,35 +126,28 @@ const SidebarContent: React.FC<SidebarContentProps> = ({
 			</a>
 			<div className="ml-12 pb-4">
 				<a
-					href="https://www.inference.vc/untitled/"
+					href="https://www.simplilearn.com/react-native-tutorial-article"
 					target="_blank"
 					className="flex px-2 py-2 text-sm leading-6 rounded-md text-gray-700 hover:text-primary"
 					aria-current="page"
 				>
-					Causal Inference (Blog Post)
+					Getting Started with React Native
 				</a>
 				<a
-					href="https://arxiv.org/abs/1305.5506"
+					href="https://en.unesco.org/sites/default/files/unesco-pearson_draft_guidelines_for_digital_inclusion.pdf"
 					target="_blank"
 					className="flex px-2 py-2 text-sm leading-6 rounded-md text-gray-700 hover:text-primary"
 					aria-current="page"
 				>
-					Introduction to Do-Calculus (Arxiv)
+					Designing for unskilled populations
 				</a>
-				<a
+				{/* <a
 					href="https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf"
 					target="_blank"
 					className="flex px-2 py-2 text-sm leading-6 rounded-md text-gray-700 hover:text-primary"
 					aria-current="page"
 				>
 					Causal Inference in Statistics
-				</a>
-				{/* <a
-					href="#"
-					className="flex px-2 py-2 text-sm leading-6 rounded-md text-gray-700 hover:text-primary"
-					aria-current="page"
-				>
-					Predicting conditions
 				</a> */}
 			</div>
 
@@ -187,7 +172,7 @@ const SidebarContent: React.FC<SidebarContentProps> = ({
 				</svg>
 				Deployment
 			</a>
-			<div className="ml-12 pb-4">
+			{/* <div className="ml-12 pb-4">
 				<a
 					href="https://techytok.com/from-zero-to-julia-using-docker/"
 					target="_blank"
@@ -204,7 +189,7 @@ const SidebarContent: React.FC<SidebarContentProps> = ({
 				>
 					On Heroku
 				</a>
-			</div>
+			</div> */}
 		</div>
 	);
 };

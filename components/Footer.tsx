@@ -83,7 +83,11 @@ const Footer: React.FC = () => {
 						</svg>
 					</a>
 
-					<a href="#" className="text-gray-400 hover:text-gray-500">
+					<a
+						href="https://github.com/Elsa-Health/"
+						target="_blank"
+						className="text-gray-400 hover:text-gray-500"
+					>
 						<span className="sr-only">GitHub</span>
 						<svg
 							className="h-6 w-6"
