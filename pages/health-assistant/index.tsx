@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import SidebarContent from "./components/SidebarContent";
 
 const SymptomAssessmentIndex = () => (
-	<div>
+	<div data-testId="SymptomAssessmentIndex">
 		<DocsLayout
 			sidebar={<SidebarContent />}
 			sidebarTitle="Mobile Health Assistant"

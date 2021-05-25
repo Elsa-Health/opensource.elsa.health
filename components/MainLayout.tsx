@@ -14,7 +14,7 @@ const MainLayout = ({
 	title = "Elsa Health | Healthcare for all",
 	description = "Elsa Health as an organization is commited to equal access to healthcare for all. We do this the best way we know how, by building technologies to augment the capacity and skills of decision makers (healthcare workers, governments, researchrs, parents, guardians, and individuals) to support optimal decision making. Disease should be a thing of the past",
 }: Props) => (
-	<div>
+	<div data-testId="MainLayout">
 		<Head>
 			<title>{title}</title>
 			<meta charSet="utf-8" />
@@ -95,7 +95,7 @@ const MainLayout = ({
 					>
 						Github
 					</button> */}
-					<button
+					<button data-testId="button"
 						type="button"
 						onClick={() =>
 							(window.location.href =
