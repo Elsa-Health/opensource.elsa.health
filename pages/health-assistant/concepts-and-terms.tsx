@@ -32,7 +32,7 @@ const content = [
 
 const Terminology = () => {
 	return (
-		<div>
+		<div data-testId="Terminology">
 			<DocsLayout
 				sidebar={<SidebarContent />}
 				sidebarTitle="Symptom Assessment"

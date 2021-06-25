@@ -50,7 +50,7 @@ const conditions: condition[] = conditionsList.map((condition) => ({
 
 const HealthConditions = () => {
 	return (
-		<div>
+		<div data-testId="HealthConditions">
 			<DocsLayout
 				sidebar={<SidebarContent />}
 				sidebarTitle="Symptom Assessment"

@@ -5,13 +5,13 @@ module.exports = {
     '!**/node_modules/**',
   ],
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  testPathIgnorePatterns: ['/node_modules\/(?!opensource.elsa.health).+\.js$', '/.next/'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
     '^.+\\.css$': '<rootDir>/config/jest/cssTransform.js',
   },
   transformIgnorePatterns: [
-    '/node_modules/',
+    '/node_modules\/(?!opensource.elsa.health)(.*)',
     '^.+\\.module\\.(css|sass|scss)$',
   ],
   moduleNameMapper: {

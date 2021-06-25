@@ -17,7 +17,7 @@ const DocsLayout = ({
 }: Props) => {
 	const [sideBarOpen, toggleSideBar] = React.useState(true);
 	return (
-		<div>
+		<div data-testId="DocsLayout">
 			<Head>
 				<title>{title}</title>
 				<meta charSet="utf-8" />
@@ -62,12 +62,12 @@ const DocsLayout = ({
 										leaveTo="-translate-x-full"
 									>
 										{(ref) => (
-											<div
+											<div data-testId="div1"
 												ref={ref}
 												className="relative flex-1 flex flex-col max-w-xs w-full h-full pt-5 pb-4 bg-gray-200"
 											>
 												<div className="absolute top-0 right-0 -mr-12 pt-2">
-													<button
+													<button data-testId="button"
 														onClick={() =>
 															toggleSideBar(
 																!sideBarOpen
