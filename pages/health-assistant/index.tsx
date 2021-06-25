@@ -30,18 +30,20 @@ const SymptomAssessmentIndex = () => (
 									>
 										Elsa Health
 									</a>{" "}
-									Symptom Assessment algorithms are a
-									collection of causal models that can be used
-									for health decision making support at all
-									levels of healthcare providers.
+									The Elsa Health Assistant is an android
+									application that can be deployed with
+									healthcare providers across levels of care
+									to collect information on patients signs,
+									symptoms, and risk factors. Paired with
+									Elsa's Symptom Assessment algorithms,
+									healthcare providers use the application to
+									get insights on the likely cause of a
+									patients symptoms.
 								</p>
 								<p>
-									The main intention of these models is to
-									support healthcare workers at the rural (and
-									urban) dispensary level by taking in patient
-									signs, symptoms and risk factors, and
-									calculating the likelihood of one of the
-									covered conditions.
+									The application supports English and Swahili
+									and has been tested with users across the
+									healthcare cadre spectrum for usability.
 								</p>
 								<p>
 									<a
@@ -129,7 +131,7 @@ const SymptomAssessmentIndex = () => (
 										Clone the repo:{" "}
 										<code>
 											git clone
-											git@github.com:Elsa-Health/elsa-models.git
+											git@github.com:Elsa-Health/elsa-providers.git
 										</code>
 									</li>
 									<li>
