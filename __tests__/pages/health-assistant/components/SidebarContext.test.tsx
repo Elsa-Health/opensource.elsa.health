@@ -2,7 +2,7 @@
 import React from "react";
 
 // import react-testing methods
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 // add custom jest matchers from jest-dom
 import "@testing-library/jest-dom/extend-expect";
@@ -10,6 +10,6 @@ import SidebarContent from "../../../../pages/health-assistant/components/Sideba
 
 describe("Sidebar Context", () => {
     test("Is it rendered", () => {
-        render(<SidebarContent baseRoute />)
+        render(<SidebarContent />)
     })
 })

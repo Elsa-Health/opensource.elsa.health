@@ -21,7 +21,7 @@ describe("Layout to be shown", () =>{
 describe("Button Component", () => {
 
 	test("Button click function gets triggered", () => {
-		const callBack = jest.fn();
+		// const callBack = jest.fn();
         const onClick = jest.fn();
 		render(<Button />);
 
